@@ -34,7 +34,7 @@ class OnboardingCubit extends Cubit<OnboardingState> {
   final PageController pageController = PageController();
 
   void subMite(context) {
-    CacheHelper.saveData(key: CacheHelperKeys.onBoarding, value: true)
+    CacheHelper.saveData(key: CacheHelperKeys.onBoardingKey, value: true)
         .then((value) {
       if (value) {
         Navigator.pushAndRemoveUntil(

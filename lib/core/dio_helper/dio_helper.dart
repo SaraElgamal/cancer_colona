@@ -4,7 +4,7 @@ class DioHelper {
   static late Dio dio;
   static init() {
     dio = Dio(BaseOptions(
-      baseUrl: "https://engazat.net//Rabee/",
+      baseUrl: "https://coloncancer-37854a95459d.herokuapp.com/",
       receiveDataWhenStatusError: true,
     ));
   }

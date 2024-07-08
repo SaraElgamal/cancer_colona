@@ -4,9 +4,9 @@ import 'package:colona/core/resources_manager/constants_manager.dart';
 import 'package:colona/core/resources_manager/theme_manager.dart';
 import 'package:colona/features/doctor_app/add_drugs_view/presentation/add_drug_cubit_ui/add_drug_ui_cubit.dart';
 import 'package:colona/features/doctor_app/login/presentation/login_cubit/doctor_login_cubit.dart';
-import 'package:colona/features/doctor_app/login/presentation/views/doctor_login_view.dart';
 import 'package:colona/features/doctor_app/register/presentation/cubit/doctor_signup_cubit.dart';
 import 'package:colona/features/patient_app/login/presentation/login_cubit/login_cubit.dart';
+import 'package:colona/features/patient_app/login/presentation/views/login_view.dart';
 import 'package:colona/features/patient_app/onboarding/presentation/cubit/onboarding_cubit.dart';
 import 'package:colona/features/patient_app/signup/presentation/cubit/signup_cubit.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         locale: Locale(CacheData.lang!),
         translations: AppLocalization(),
         debugShowCheckedModeBanner: false,
-        home: const DoctorLoginView(),
+        home: const LoginView(),
         // home: AnimatedSplashScreen(
         //   splash: const SplashView(),
         //   splashIconSize: double.infinity,
